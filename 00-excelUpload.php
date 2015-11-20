@@ -7,7 +7,7 @@ $fileElementName="myExcel";
 
 			$objPHPExcel = PHPExcel_IOFactory::load($inputFileName); //create an instance from the uploaded file
 			$objPHPExcel->setActiveSheetIndex(0);
-
+//add command
 //example 1, get worksheet information
 			$objWorksheet = $objPHPExcel->getActiveSheet();
 			$highestRow = $objWorksheet->getHighestRow(); //e.q. 10
